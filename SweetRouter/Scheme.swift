@@ -1,9 +1,9 @@
 //
 //  Scheme.swift
-//  ApiConnector
+//  SweetRouter
 //
-//  Created by Oleksii on 20/01/2017.
-//  Copyright © 2017 WeAreReasonablePeople. All rights reserved.
+//  Created by Oleksii on 16/03/2017.
+//  Copyright © 2017 ViolentOctopus. All rights reserved.
 //
 
 import Foundation

@@ -11,6 +11,8 @@
 		CE0CE9431E7AC651000647EF /* SweetRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE0CE9351E7AC651000647EF /* SweetRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE0CE94D1E7AD157000647EF /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE94C1E7AD157000647EF /* Scheme.swift */; };
 		CE0CE94F1E7AD223000647EF /* TestScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE94E1E7AD223000647EF /* TestScheme.swift */; };
+		CE0CE9511E7ADE6B000647EF /* IP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE9501E7ADE6B000647EF /* IP.swift */; };
+		CE0CE9531E7AE0CF000647EF /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE9521E7AE0CF000647EF /* TestIP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		CE0CE9421E7AC651000647EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0CE94C1E7AD157000647EF /* Scheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheme.swift; sourceTree = "<group>"; };
 		CE0CE94E1E7AD223000647EF /* TestScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestScheme.swift; sourceTree = "<group>"; };
+		CE0CE9501E7ADE6B000647EF /* IP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IP.swift; sourceTree = "<group>"; };
+		CE0CE9521E7AE0CF000647EF /* TestIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestIP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			children = (
 				CE0CE9351E7AC651000647EF /* SweetRouter.h */,
 				CE0CE94C1E7AD157000647EF /* Scheme.swift */,
+				CE0CE9501E7ADE6B000647EF /* IP.swift */,
 				CE0CE9361E7AC651000647EF /* Info.plist */,
 			);
 			path = SweetRouter;
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0CE94E1E7AD223000647EF /* TestScheme.swift */,
+				CE0CE9521E7AE0CF000647EF /* TestIP.swift */,
 				CE0CE9421E7AC651000647EF /* Info.plist */,
 			);
 			path = SweetRouterTests;
@@ -202,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0CE9511E7ADE6B000647EF /* IP.swift in Sources */,
 				CE0CE94D1E7AD157000647EF /* Scheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0CE9531E7AE0CF000647EF /* TestIP.swift in Sources */,
 				CE0CE94F1E7AD223000647EF /* TestScheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
