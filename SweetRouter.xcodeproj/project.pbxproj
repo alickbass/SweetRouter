@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CE0CE93C1E7AC651000647EF /* SweetRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0CE9321E7AC651000647EF /* SweetRouter.framework */; };
-		CE0CE9411E7AC651000647EF /* SweetRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE9401E7AC651000647EF /* SweetRouterTests.swift */; };
 		CE0CE9431E7AC651000647EF /* SweetRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE0CE9351E7AC651000647EF /* SweetRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE0CE94D1E7AD157000647EF /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE94C1E7AD157000647EF /* Scheme.swift */; };
+		CE0CE94F1E7AD223000647EF /* TestScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE94E1E7AD223000647EF /* TestScheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +28,9 @@
 		CE0CE9351E7AC651000647EF /* SweetRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SweetRouter.h; sourceTree = "<group>"; };
 		CE0CE9361E7AC651000647EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0CE93B1E7AC651000647EF /* SweetRouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetRouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE0CE9401E7AC651000647EF /* SweetRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetRouterTests.swift; sourceTree = "<group>"; };
 		CE0CE9421E7AC651000647EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0CE94C1E7AD157000647EF /* Scheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheme.swift; sourceTree = "<group>"; };
+		CE0CE94E1E7AD223000647EF /* TestScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestScheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0CE9351E7AC651000647EF /* SweetRouter.h */,
+				CE0CE94C1E7AD157000647EF /* Scheme.swift */,
 				CE0CE9361E7AC651000647EF /* Info.plist */,
 			);
 			path = SweetRouter;
@@ -80,7 +83,7 @@
 		CE0CE93F1E7AC651000647EF /* SweetRouterTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE0CE9401E7AC651000647EF /* SweetRouterTests.swift */,
+				CE0CE94E1E7AD223000647EF /* TestScheme.swift */,
 				CE0CE9421E7AC651000647EF /* Info.plist */,
 			);
 			path = SweetRouterTests;
@@ -149,6 +152,7 @@
 					CE0CE9311E7AC651000647EF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7H6SM4X3H7;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					CE0CE93A1E7AC651000647EF = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0CE94D1E7AD157000647EF /* Scheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0CE9411E7AC651000647EF /* SweetRouterTests.swift in Sources */,
+				CE0CE94F1E7AD223000647EF /* TestScheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7H6SM4X3H7;
@@ -336,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.violentoctopus.SweetRouter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -344,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7H6SM4X3H7;
@@ -364,6 +372,7 @@
 		CE0CE94A1E7AC651000647EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7H6SM4X3H7;
 				INFOPLIST_FILE = SweetRouterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -376,6 +385,7 @@
 		CE0CE94B1E7AC651000647EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7H6SM4X3H7;
 				INFOPLIST_FILE = SweetRouterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
