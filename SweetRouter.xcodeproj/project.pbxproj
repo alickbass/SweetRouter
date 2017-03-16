@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE0CE93C1E7AC651000647EF /* SweetRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0CE9321E7AC651000647EF /* SweetRouter.framework */; };
+		CE0CE9411E7AC651000647EF /* SweetRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE9401E7AC651000647EF /* SweetRouterTests.swift */; };
+		CE0CE9431E7AC651000647EF /* SweetRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE0CE9351E7AC651000647EF /* SweetRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE0CE93D1E7AC651000647EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE0CE9291E7AC651000647EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE0CE9311E7AC651000647EF;
+			remoteInfo = SweetRouter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE0CE9321E7AC651000647EF /* SweetRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweetRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0CE9351E7AC651000647EF /* SweetRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SweetRouter.h; sourceTree = "<group>"; };
+		CE0CE9361E7AC651000647EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0CE93B1E7AC651000647EF /* SweetRouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetRouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0CE9401E7AC651000647EF /* SweetRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetRouterTests.swift; sourceTree = "<group>"; };
+		CE0CE9421E7AC651000647EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE0CE92E1E7AC651000647EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0CE9381E7AC651000647EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0CE93C1E7AC651000647EF /* SweetRouter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE0CE9281E7AC651000647EF = {
+			isa = PBXGroup;
+			children = (
+				CE0CE9341E7AC651000647EF /* SweetRouter */,
+				CE0CE93F1E7AC651000647EF /* SweetRouterTests */,
+				CE0CE9331E7AC651000647EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE0CE9331E7AC651000647EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE0CE9321E7AC651000647EF /* SweetRouter.framework */,
+				CE0CE93B1E7AC651000647EF /* SweetRouterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE0CE9341E7AC651000647EF /* SweetRouter */ = {
+			isa = PBXGroup;
+			children = (
+				CE0CE9351E7AC651000647EF /* SweetRouter.h */,
+				CE0CE9361E7AC651000647EF /* Info.plist */,
+			);
+			path = SweetRouter;
+			sourceTree = "<group>";
+		};
+		CE0CE93F1E7AC651000647EF /* SweetRouterTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE0CE9401E7AC651000647EF /* SweetRouterTests.swift */,
+				CE0CE9421E7AC651000647EF /* Info.plist */,
+			);
+			path = SweetRouterTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE0CE92F1E7AC651000647EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0CE9431E7AC651000647EF /* SweetRouter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CE0CE9311E7AC651000647EF /* SweetRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0CE9461E7AC651000647EF /* Build configuration list for PBXNativeTarget "SweetRouter" */;
+			buildPhases = (
+				CE0CE92D1E7AC651000647EF /* Sources */,
+				CE0CE92E1E7AC651000647EF /* Frameworks */,
+				CE0CE92F1E7AC651000647EF /* Headers */,
+				CE0CE9301E7AC651000647EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SweetRouter;
+			productName = SweetRouter;
+			productReference = CE0CE9321E7AC651000647EF /* SweetRouter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE0CE93A1E7AC651000647EF /* SweetRouterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0CE9491E7AC651000647EF /* Build configuration list for PBXNativeTarget "SweetRouterTests" */;
+			buildPhases = (
+				CE0CE9371E7AC651000647EF /* Sources */,
+				CE0CE9381E7AC651000647EF /* Frameworks */,
+				CE0CE9391E7AC651000647EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE0CE93E1E7AC651000647EF /* PBXTargetDependency */,
+			);
+			name = SweetRouterTests;
+			productName = SweetRouterTests;
+			productReference = CE0CE93B1E7AC651000647EF /* SweetRouterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE0CE9291E7AC651000647EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ViolentOctopus;
+				TargetAttributes = {
+					CE0CE9311E7AC651000647EF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7H6SM4X3H7;
+						ProvisioningStyle = Automatic;
+					};
+					CE0CE93A1E7AC651000647EF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7H6SM4X3H7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CE0CE92C1E7AC651000647EF /* Build configuration list for PBXProject "SweetRouter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE0CE9281E7AC651000647EF;
+			productRefGroup = CE0CE9331E7AC651000647EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE0CE9311E7AC651000647EF /* SweetRouter */,
+				CE0CE93A1E7AC651000647EF /* SweetRouterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE0CE9301E7AC651000647EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0CE9391E7AC651000647EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE0CE92D1E7AC651000647EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0CE9371E7AC651000647EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0CE9411E7AC651000647EF /* SweetRouterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE0CE93E1E7AC651000647EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE0CE9311E7AC651000647EF /* SweetRouter */;
+			targetProxy = CE0CE93D1E7AC651000647EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE0CE9441E7AC651000647EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE0CE9451E7AC651000647EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE0CE9471E7AC651000647EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7H6SM4X3H7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SweetRouter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.violentoctopus.SweetRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CE0CE9481E7AC651000647EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7H6SM4X3H7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SweetRouter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.violentoctopus.SweetRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CE0CE94A1E7AC651000647EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7H6SM4X3H7;
+				INFOPLIST_FILE = SweetRouterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.violentoctopus.SweetRouterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CE0CE94B1E7AC651000647EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7H6SM4X3H7;
+				INFOPLIST_FILE = SweetRouterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.violentoctopus.SweetRouterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE0CE92C1E7AC651000647EF /* Build configuration list for PBXProject "SweetRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0CE9441E7AC651000647EF /* Debug */,
+				CE0CE9451E7AC651000647EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0CE9461E7AC651000647EF /* Build configuration list for PBXNativeTarget "SweetRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0CE9471E7AC651000647EF /* Debug */,
+				CE0CE9481E7AC651000647EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0CE9491E7AC651000647EF /* Build configuration list for PBXNativeTarget "SweetRouterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0CE94A1E7AC651000647EF /* Debug */,
+				CE0CE94B1E7AC651000647EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE0CE9291E7AC651000647EF /* Project object */;
+}
