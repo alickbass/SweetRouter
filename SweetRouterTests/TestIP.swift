@@ -13,7 +13,7 @@ class TestIP: XCTestCase {
     
     func testIPHashable() {
         XCTAssertEqual(IP(127, 0, 0, 1), IP(127, 0, 0, 1))
-        XCTAssertEqual(IP(127, 0, 0, 1).stringValue, "127.0.0.1")
+        XCTAssertEqual(IP(127, 0, 0, 1).hostString, "127.0.0.1".hostString)
         XCTAssertEqual(IP(127, 0, 0, 1).hashValue, IP(127, 0, 0, 1).hashValue)
         XCTAssertNotEqual(IP(127, 0, 127, 1).hashValue, IP(0, 1, 0, 2).hashValue)
         XCTAssertNotEqual(IP(127, 24, 127, 25).hashValue, IP(12, 24, 12, 25).hashValue)
