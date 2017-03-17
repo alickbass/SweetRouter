@@ -15,11 +15,11 @@ public protocol RoutePathComponent {
 
 public extension RoutePathComponent {
     public var pathValue: String {
-        return Route.Path.separator + stringValue
+        return URL.Path.separator + stringValue
     }
 }
 
-public extension Route {
+public extension URL {
     public struct Path {
         fileprivate static let separator = "/"
         fileprivate let path: [RoutePathComponent]
@@ -39,27 +39,27 @@ public extension Route {
 
 }
 
-extension Route.Path: RoutePathComponent {
+extension URL.Path: RoutePathComponent {
     public var stringValue: String {
-        return path.map({ $0.stringValue }).joined(separator: Route.Path.separator)
+        return path.map({ $0.stringValue }).joined(separator: URL.Path.separator)
     }
 }
 
-extension Route.Path: Equatable {
-    public static func == (lhs: Route.Path, rhs: Route.Path) -> Bool {
+extension URL.Path: Equatable {
+    public static func == (lhs: URL.Path, rhs: URL.Path) -> Bool {
         return lhs.path.lazy.map({ $0.stringValue }) == rhs.path.lazy.map({ $0.stringValue })
     }
 }
 
-extension Route.Path: ExpressibleByArrayLiteral {
+extension URL.Path: ExpressibleByArrayLiteral {
     public init(arrayLiteral elements: RoutePathComponent...) {
         self.init(elements)
     }
 }
 
-public extension Route.Path {
-    public static func + (lhs: Route.Path, rhs: Route.Path) -> Route.Path {
-        return Route.Path(lhs.path + rhs.path)
+public extension URL.Path {
+    public static func + (lhs: URL.Path, rhs: URL.Path) -> URL.Path {
+        return URL.Path(lhs.path + rhs.path)
     }
 }
 

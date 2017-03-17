@@ -12,8 +12,8 @@ import SweetRouter
 class TestRoute: XCTestCase {
     
     func testUrlRouteEquatable() {
-        XCTAssertEqual(Route(path: ["myPath"], query: ("user", nil)), Route(path: ["myPath"], query: ("user", nil)))
-        XCTAssertNotEqual(Route(path: ["myPath"]), Route(path: ["myPath"], query: ("user", nil)))
+        XCTAssertEqual(URL.Route(path: ["myPath"], query: ("user", nil)), URL.Route(path: ["myPath"], query: ("user", nil)))
+        XCTAssertNotEqual(URL.Route(path: ["myPath"]), URL.Route(path: ["myPath"], query: ("user", nil)))
     }
     
 }
