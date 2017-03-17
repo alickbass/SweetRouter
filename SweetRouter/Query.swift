@@ -12,7 +12,7 @@ public protocol QueryItemValue {
     var stringValue: String { get }
 }
 
-public extension Route {
+public extension URL {
     public struct Query {
         fileprivate let items: [(name: String, value: QueryItemValue?)]
         
@@ -30,8 +30,8 @@ public extension Route {
     }
 }
 
-extension Route.Query: Equatable {
-    public static func == (lhs: Route.Query, rhs: Route.Query) -> Bool {
+extension URL.Query: Equatable {
+    public static func == (lhs: URL.Query, rhs: URL.Query) -> Bool {
         let lhs = lhs.items, rhs = rhs.items
         guard lhs.count == rhs.count else { return false }
         

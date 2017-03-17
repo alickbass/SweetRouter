@@ -12,14 +12,14 @@ import SweetRouter
 class TestQuery: XCTestCase {
     
     func testQueryEquatable() {
-        XCTAssertNotEqual(Route.Query(("userId", "123"), ("today", nil)), Route.Query(("userId", "123")))
-        XCTAssertNotEqual(Route.Query(("userId", "123"), ("today", nil)), Route.Query(("userId", "123"), ("tomorrow", nil)))
-        XCTAssertNotEqual(Route.Query(("userId", "123"), ("today", nil)), Route.Query(("userId", "123"), ("today", "24")))
-        XCTAssertEqual(Route.Query(("userId", "123"), ("today", nil)), Route.Query(("userId", "123"), ("today", nil)))
+        XCTAssertNotEqual(URL.Query(("userId", "123"), ("today", nil)), URL.Query(("userId", "123")))
+        XCTAssertNotEqual(URL.Query(("userId", "123"), ("today", nil)), URL.Query(("userId", "123"), ("tomorrow", nil)))
+        XCTAssertNotEqual(URL.Query(("userId", "123"), ("today", nil)), URL.Query(("userId", "123"), ("today", "24")))
+        XCTAssertEqual(URL.Query(("userId", "123"), ("today", nil)), URL.Query(("userId", "123"), ("today", nil)))
     }
     
     func testQueryCreation() {
-        let query = Route.Query(("userId", "123"), ("today", nil))
+        let query = URL.Query(("userId", "123"), ("today", nil))
         let items: [URLQueryItem] = [.init(name: "userId", value: "123"), .init(name: "today", value: nil)]
         XCTAssertEqual(query.queryItems, items)
     }

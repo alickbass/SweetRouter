@@ -8,10 +8,6 @@
 
 import Foundation
 
-public protocol EnvironmentType {
-    var value: URL.Environment { get }
-}
-
 public extension URL {
     public struct Environment {
         public let scheme: Scheme
@@ -43,5 +39,11 @@ extension URL.Environment: Equatable {
         return lhs.scheme == rhs.scheme
             && lhs.host.hostString == rhs.host.hostString
             && lhs.port == rhs.port
+    }
+}
+
+extension URL.Environment: EnvironmentType {
+    public var value: URL.Environment {
+        return self
     }
 }
