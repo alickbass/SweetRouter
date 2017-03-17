@@ -19,6 +19,9 @@
 		CEE949EF1E7C23E400D3C856 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949EE1E7C23E400D3C856 /* TestQuery.swift */; };
 		CEE949F11E7C293C00D3C856 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949F01E7C293C00D3C856 /* Route.swift */; };
 		CEEECF9D1E7C2B82000D625A /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEECF9C1E7C2B82000D625A /* TestRoute.swift */; };
+		CEEECFA11E7C30BC000D625A /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEECFA01E7C30BC000D625A /* Host.swift */; };
+		CEEECFA31E7C3218000D625A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEECFA21E7C3218000D625A /* Environment.swift */; };
+		CEEECFA51E7C3570000D625A /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEECFA41E7C3570000D625A /* TestEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		CEE949EE1E7C23E400D3C856 /* TestQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestQuery.swift; sourceTree = "<group>"; };
 		CEE949F01E7C293C00D3C856 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		CEEECF9C1E7C2B82000D625A /* TestRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRoute.swift; sourceTree = "<group>"; };
+		CEEECFA01E7C30BC000D625A /* Host.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
+		CEEECFA21E7C3218000D625A /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		CEEECFA41E7C3570000D625A /* TestEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 		CE0CE93F1E7AC651000647EF /* SweetRouterTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEEECFA41E7C3570000D625A /* TestEnvironment.swift */,
 				CE0CE94E1E7AD223000647EF /* TestScheme.swift */,
 				CE0CE9521E7AE0CF000647EF /* TestIP.swift */,
 				CEEECF9C1E7C2B82000D625A /* TestRoute.swift */,
@@ -113,7 +120,9 @@
 		CEEECF9A1E7C2B46000D625A /* Environment */ = {
 			isa = PBXGroup;
 			children = (
+				CEEECFA21E7C3218000D625A /* Environment.swift */,
 				CE0CE94C1E7AD157000647EF /* Scheme.swift */,
+				CEEECFA01E7C30BC000D625A /* Host.swift */,
 				CE0CE9501E7ADE6B000647EF /* IP.swift */,
 			);
 			name = Environment;
@@ -245,6 +254,8 @@
 				CEE949ED1E7C200000D3C856 /* Query.swift in Sources */,
 				CE0CE9511E7ADE6B000647EF /* IP.swift in Sources */,
 				CE3507421E7AF0BE007BCD37 /* Path.swift in Sources */,
+				CEEECFA31E7C3218000D625A /* Environment.swift in Sources */,
+				CEEECFA11E7C30BC000D625A /* Host.swift in Sources */,
 				CEE949F11E7C293C00D3C856 /* Route.swift in Sources */,
 				CE0CE94D1E7AD157000647EF /* Scheme.swift in Sources */,
 			);
@@ -255,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE949EF1E7C23E400D3C856 /* TestQuery.swift in Sources */,
+				CEEECFA51E7C3570000D625A /* TestEnvironment.swift in Sources */,
 				CE0CE9531E7AE0CF000647EF /* TestIP.swift in Sources */,
 				CE0CE94F1E7AD223000647EF /* TestScheme.swift in Sources */,
 				CEEECF9D1E7C2B82000D625A /* TestRoute.swift in Sources */,
