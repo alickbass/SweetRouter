@@ -12,24 +12,26 @@ public protocol QueryItemValue {
     var stringValue: String { get }
 }
 
-public struct Query {
-    fileprivate let items: [(name: String, value: QueryItemValue?)]
-    
-    public init(_ items: (name: String, value: QueryItemValue?)...) {
-        self.init(items)
-    }
-    
-    public init(_ items: [(name: String, value: QueryItemValue?)]) {
-        self.items = items
-    }
-    
-    public var queryItems: [URLQueryItem] {
-        return items.map({ URLQueryItem(name: $0.name, value: $0.value?.stringValue) })
+public extension Route {
+    public struct Query {
+        fileprivate let items: [(name: String, value: QueryItemValue?)]
+        
+        public init(_ items: (name: String, value: QueryItemValue?)...) {
+            self.init(items)
+        }
+        
+        public init(_ items: [(name: String, value: QueryItemValue?)]) {
+            self.items = items
+        }
+        
+        public var queryItems: [URLQueryItem] {
+            return items.map({ URLQueryItem(name: $0.name, value: $0.value?.stringValue) })
+        }
     }
 }
 
-extension Query: Equatable {
-    public static func == (lhs: Query, rhs: Query) -> Bool {
+extension Route.Query: Equatable {
+    public static func == (lhs: Route.Query, rhs: Route.Query) -> Bool {
         let lhs = lhs.items, rhs = rhs.items
         guard lhs.count == rhs.count else { return false }
         
