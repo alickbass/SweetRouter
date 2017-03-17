@@ -12,17 +12,17 @@ import SweetRouter
 class TestRoutePath: XCTestCase {
     
     func testRouterPathEquatable() {
-        XCTAssertNotEqual(RoutePath("new", "api", "cards"), RoutePath("new", "api"))
-        XCTAssertEqual(RoutePath("new", "api", "cards"), RoutePath("new", "api", "cards"))
+        XCTAssertNotEqual(Route.Path("new", "api", "cards"), Route.Path("new", "api"))
+        XCTAssertEqual(Route.Path("new", "api", "cards"), Route.Path("new", "api", "cards"))
     }
     
     func testRouterPathArrayCreation() {
         let path = "/new/api/cards"
         
-        XCTAssertEqual(RoutePath("new", "api", "cards").pathValue, path)
-        XCTAssertEqual(RoutePath(RoutePath("new", "api"), "cards").pathValue, path)
-        XCTAssertEqual((RoutePath("new", "api") + ["cards"]).pathValue, path)
-        XCTAssertEqual(RoutePath("new", "api").with("cards").pathValue, path)
+        XCTAssertEqual(Route.Path("new", "api", "cards").pathValue, path)
+        XCTAssertEqual(Route.Path(Route.Path("new", "api"), "cards").pathValue, path)
+        XCTAssertEqual((Route.Path("new", "api") + ["cards"]).pathValue, path)
+        XCTAssertEqual(Route.Path("new", "api").with("cards").pathValue, path)
     }
     
 }
