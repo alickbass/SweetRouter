@@ -8,10 +8,6 @@
 
 import Foundation
 
-public protocol EnvironmentType {
-    var value: URL.Environment { get }
-}
-
 public extension URL {
     public struct Environment {
         public let scheme: Scheme
