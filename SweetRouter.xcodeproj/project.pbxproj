@@ -16,6 +16,7 @@
 		CE3507421E7AF0BE007BCD37 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3507411E7AF0BE007BCD37 /* Path.swift */; };
 		CE3507441E7AF0F5007BCD37 /* TestRoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3507431E7AF0F5007BCD37 /* TestRoutePath.swift */; };
 		CE756FDD1E7C39A500D55DBA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE756FDC1E7C39A500D55DBA /* Router.swift */; };
+		CE756FE11E7C411D00D55DBA /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE756FE01E7C411D00D55DBA /* TestRouter.swift */; };
 		CEE949ED1E7C200000D3C856 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949EC1E7C200000D3C856 /* Query.swift */; };
 		CEE949EF1E7C23E400D3C856 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949EE1E7C23E400D3C856 /* TestQuery.swift */; };
 		CEE949F11E7C293C00D3C856 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949F01E7C293C00D3C856 /* Route.swift */; };
@@ -48,6 +49,7 @@
 		CE3507411E7AF0BE007BCD37 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		CE3507431E7AF0F5007BCD37 /* TestRoutePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRoutePath.swift; sourceTree = "<group>"; };
 		CE756FDC1E7C39A500D55DBA /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		CE756FE01E7C411D00D55DBA /* TestRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
 		CEE949EC1E7C200000D3C856 /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
 		CEE949EE1E7C23E400D3C856 /* TestQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestQuery.swift; sourceTree = "<group>"; };
 		CEE949F01E7C293C00D3C856 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		CE0CE93F1E7AC651000647EF /* SweetRouterTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE756FE01E7C411D00D55DBA /* TestRouter.swift */,
 				CEEECFA41E7C3570000D625A /* TestEnvironment.swift */,
 				CE0CE94E1E7AD223000647EF /* TestScheme.swift */,
 				CE0CE9521E7AE0CF000647EF /* TestIP.swift */,
@@ -273,6 +276,7 @@
 				CEEECFA51E7C3570000D625A /* TestEnvironment.swift in Sources */,
 				CE0CE9531E7AE0CF000647EF /* TestIP.swift in Sources */,
 				CE0CE94F1E7AD223000647EF /* TestScheme.swift in Sources */,
+				CE756FE11E7C411D00D55DBA /* TestRouter.swift in Sources */,
 				CEEECF9D1E7C2B82000D625A /* TestRoute.swift in Sources */,
 				CE3507441E7AF0F5007BCD37 /* TestRoutePath.swift in Sources */,
 			);
