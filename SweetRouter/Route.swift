@@ -13,7 +13,7 @@ public extension URL {
         public let path: Path
         public let query: Query?
         
-        public init(path: Path, query: (name: String, value: QueryItemValue?)) {
+        public init(path: Path, query: (name: String, value: QueryItemValue?)...) {
             self.path = path
             self.query = Query(query)
         }
