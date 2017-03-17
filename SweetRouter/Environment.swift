@@ -41,3 +41,9 @@ extension URL.Environment: Equatable {
             && lhs.port == rhs.port
     }
 }
+
+extension URL.Environment: EnvironmentType {
+    public var value: URL.Environment {
+        return self
+    }
+}
