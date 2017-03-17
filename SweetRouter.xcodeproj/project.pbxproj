@@ -15,6 +15,8 @@
 		CE0CE9531E7AE0CF000647EF /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE9521E7AE0CF000647EF /* TestIP.swift */; };
 		CE3507421E7AF0BE007BCD37 /* RoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3507411E7AF0BE007BCD37 /* RoutePath.swift */; };
 		CE3507441E7AF0F5007BCD37 /* TestRoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3507431E7AF0F5007BCD37 /* TestRoutePath.swift */; };
+		CEE949ED1E7C200000D3C856 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949EC1E7C200000D3C856 /* Query.swift */; };
+		CEE949EF1E7C23E400D3C856 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949EE1E7C23E400D3C856 /* TestQuery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		CE0CE9521E7AE0CF000647EF /* TestIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestIP.swift; sourceTree = "<group>"; };
 		CE3507411E7AF0BE007BCD37 /* RoutePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePath.swift; sourceTree = "<group>"; };
 		CE3507431E7AF0F5007BCD37 /* TestRoutePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRoutePath.swift; sourceTree = "<group>"; };
+		CEE949EC1E7C200000D3C856 /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		CEE949EE1E7C23E400D3C856 /* TestQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestQuery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				CE0CE94C1E7AD157000647EF /* Scheme.swift */,
 				CE0CE9501E7ADE6B000647EF /* IP.swift */,
 				CE3507411E7AF0BE007BCD37 /* RoutePath.swift */,
+				CEE949EC1E7C200000D3C856 /* Query.swift */,
 				CE0CE9361E7AC651000647EF /* Info.plist */,
 			);
 			path = SweetRouter;
@@ -96,6 +101,7 @@
 				CE0CE94E1E7AD223000647EF /* TestScheme.swift */,
 				CE0CE9521E7AE0CF000647EF /* TestIP.swift */,
 				CE3507431E7AF0F5007BCD37 /* TestRoutePath.swift */,
+				CEE949EE1E7C23E400D3C856 /* TestQuery.swift */,
 				CE0CE9421E7AC651000647EF /* Info.plist */,
 			);
 			path = SweetRouterTests;
@@ -214,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE949ED1E7C200000D3C856 /* Query.swift in Sources */,
 				CE0CE9511E7ADE6B000647EF /* IP.swift in Sources */,
 				CE3507421E7AF0BE007BCD37 /* RoutePath.swift in Sources */,
 				CE0CE94D1E7AD157000647EF /* Scheme.swift in Sources */,
@@ -224,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE949EF1E7C23E400D3C856 /* TestQuery.swift in Sources */,
 				CE0CE9531E7AE0CF000647EF /* TestIP.swift in Sources */,
 				CE0CE94F1E7AD223000647EF /* TestScheme.swift in Sources */,
 				CE3507441E7AF0F5007BCD37 /* TestRoutePath.swift in Sources */,
