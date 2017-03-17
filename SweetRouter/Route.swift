@@ -9,15 +9,15 @@
 import Foundation
 
 public struct Route {
-    public let path: RoutePath
+    public let path: Path
     public let query: Query?
     
-    public init(path: RoutePath, query: (name: String, value: QueryItemValue?)) {
+    public init(path: Path, query: (name: String, value: QueryItemValue?)) {
         self.path = path
         self.query = Query(query)
     }
     
-    public init(path: RoutePath) {
+    public init(path: Path) {
         self.path = path
         self.query = nil
     }
