@@ -52,7 +52,44 @@ struct Api: RouterType {
 And in our application we would use it like this:
 
 ```swift
-print(Api(at: .me).url) // prints http://localhost:8080/me
-print(Api(.test, at: .auth).url) // prints http://126.251.20.32/auth
-print(Api(.production, at: .posts(for: Date())).url) // prints https://myproductionserver.com:3000/posts?date=12.04.2017&userId=someId
+print(Api(at: .me).url) // http://localhost:8080/me
+print(Api(.test, at: .auth).url) // http://126.251.20.32/auth
+print(Api(.production, at: .posts(for: Date())).url) // https://myproductionserver.com:3000/posts?date=12.04.2017&userId=someId
+```
+
+## What if I have only one environment?
+
+It can often happen, that you will be using some third-party `API` and you will have only access to Production environment. So in this case your Router will look something like this:
+
+```swift
+struct Auth: RouterType {
+    enum Route: RouteType {
+        case signIn, signOut
+        
+        var route: URL.Route {
+            switch self {
+            case .signIn: return .init(path: ["signIn"])
+            case .signOut: return .init(path: ["signOut"])
+            }
+        }
+            
+        var defaultPath: URL.Path {
+            return .init("api", "new")
+        }
+    }
+    
+    let environment = URL.Environment(.https, "auth.server.com", 8080)
+    let route: Route
+    
+    init(at route: Route) {
+        self.route = route
+    }
+}
+```
+
+And use it like this:
+
+```swift
+print(Auth(at: .signIn).url) // https://auth.server.com:8080/api/new/signIn
+print(Auth(at: .signOut).url) // https://auth.server.com:8080/api/new/signOut
 ```
