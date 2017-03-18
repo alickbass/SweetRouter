@@ -54,5 +54,5 @@ And in our application we would use it like this:
 ```swift
 print(Api(at: .me).url) // prints http://localhost:8080/me
 print(Api(.test, at: .auth).url) // prints http://126.251.20.32/auth
-print(Api(.production, at: .posts(for: Date()))) // prints https://myproductionserver.com:3000/posts?date=12.04.2017&userId=someId
+print(Api(.production, at: .posts(for: Date())).url) // prints https://myproductionserver.com:3000/posts?date=12.04.2017&userId=someId
 ```
