@@ -19,9 +19,10 @@ public struct Router<T: RouterType>: URLRepresentable {
     
     public var components: URLComponents {
         var components = environment.components
+        let route = self.route.route
         
-        components.path = route.defaultPath.with(route.route.path).pathValue
-        components.queryItems = route.route.query?.queryItems
+        components.path = self.route.defaultPath.with(route.path).pathValue
+        components.queryItems = route.query?.queryItems
         
         return components
     }
