@@ -8,6 +8,26 @@
 
 import Foundation
 
+public struct Router<T: RouterType>: URLRepresentable {
+    public let environment: T.Environment
+    public let route: T.Route
+    
+    public init(_ environment: T.Environment = T.default, at route: T.Route) {
+        self.environment = environment
+        self.route = route
+    }
+    
+    public var components: URLComponents {
+        var components = environment.components
+        let route = self.route.route
+        
+        components.path = self.route.defaultPath.with(route.path).pathValue
+        components.queryItems = route.query?.queryItems
+        
+        return components
+    }
+}
+
 public protocol URLRepresentable {
     var components: URLComponents { get }
     var url: URL { get }
@@ -20,12 +40,11 @@ public extension URLRepresentable {
     }
 }
 
-public protocol RouterType: URLRepresentable {
+public protocol RouterType {
     associatedtype Environment: EnvironmentType
     associatedtype Route: RouteType
     
-    var environment: Environment { get }
-    var route: Route { get }
+    static var `default`: Environment { get }
 }
 
 public protocol RouteType {
@@ -45,17 +64,6 @@ public extension EnvironmentType {
         components.scheme = environment.scheme.rawValue
         components.host = environment.host.hostString
         components.port = environment.port
-        
-        return components
-    }
-}
-
-public extension RouterType {
-    public var components: URLComponents {
-        var components = environment.components
-        
-        components.path = route.defaultPath.with(route.route.path).pathValue
-        components.queryItems = route.route.query?.queryItems
         
         return components
     }
