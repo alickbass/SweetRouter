@@ -40,6 +40,7 @@ struct Api: RouterType {
     }
     
     static let `default`: Environment = .localhost
+}
 ```
 
 And in our application we would use it like this:
