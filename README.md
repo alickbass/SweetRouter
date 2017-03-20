@@ -81,3 +81,26 @@ And use it like this:
 print(Router<Auth>(at: .signIn).url) // https://auth.server.com:8080/api/new/signIn
 print(Router<Auth>(at: .signOut).url) // https://auth.server.com:8080/api/new/signOut
 ```
+
+## How to use with Alamofire?
+
+Add the following code somewhere in your app:
+
+```swift
+import Alamofire
+import SweetRouter
+
+extension Router: URLConvertible {
+    func asURL() throws -> URL {
+        return url
+    }
+}
+```
+
+And then you can use the same Routers like this:
+
+```swift
+Alamofire.request(Router<Auth>(at: .signIn))
+```
+
+As easy as that 😉
