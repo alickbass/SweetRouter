@@ -38,13 +38,7 @@ struct Api: RouterType {
         }
     }
     
-    let environment: Environment
-    let route: Route
-    
-    init(_ environment: Environment = .localhost, at route: Route) {
-        self.environment = environment
-        self.route = route
-    }
+    static let `default`: Environment = .localhost
 }
 
 struct Auth: RouterType {
@@ -63,25 +57,20 @@ struct Auth: RouterType {
         }
     }
     
-    let environment = URL.Environment(.https, "auth.server.com", 8080)
-    let route: Route
-    
-    init(at route: Route) {
-        self.route = route
-    }
+    static let `default` = URL.Environment(.https, "auth.server.com", 8080)
 }
 
 class TestRouter: XCTestCase {
     
     func testApiRouter() {
-        XCTAssertEqual(Api(at: .me).url, URL(string: "http://localhost:8080/me"))
-        XCTAssertEqual(Api(.test, at: .auth).url, URL(string: "http://126.251.20.32/auth"))
-        XCTAssertEqual(Api(.production, at: .posts(for: "12.04.2017")).url, URL(string: "https://myproductionserver.com:3000/posts?date=12.04.2017&userId=someId"))
+        XCTAssertEqual(Router<Api>(at: .me).url, URL(string: "http://localhost:8080/me"))
+        XCTAssertEqual(Router<Api>(.test, at: .auth).url, URL(string: "http://126.251.20.32/auth"))
+        XCTAssertEqual(Router<Api>(.production, at: .posts(for: "12.04.2017")).url, URL(string: "https://myproductionserver.com:3000/posts?date=12.04.2017&userId=someId"))
     }
     
     func testAuthRouter() {
-        XCTAssertEqual(Auth(at: .signIn).url, URL(string: "https://auth.server.com:8080/api/new/signIn"))
-        XCTAssertEqual(Auth(at: .signOut).url, URL(string: "https://auth.server.com:8080/api/new/signOut"))
+        XCTAssertEqual(Router<Auth>(at: .signIn).url, URL(string: "https://auth.server.com:8080/api/new/signIn"))
+        XCTAssertEqual(Router<Auth>(at: .signOut).url, URL(string: "https://auth.server.com:8080/api/new/signOut"))
     }
     
 }
