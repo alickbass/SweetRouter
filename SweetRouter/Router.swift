@@ -40,16 +40,6 @@ public extension URLRepresentable {
     }
 }
 
-protocol URLConvertible {
-    func asURL() throws -> URL
-}
-
-extension Router: URLConvertible {
-    func asURL() throws -> URL {
-        return url
-    }
-}
-
 public protocol RouterType {
     associatedtype Environment: EnvironmentType
     associatedtype Route: RouteType
