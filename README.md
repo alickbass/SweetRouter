@@ -91,7 +91,7 @@ import Alamofire
 import SweetRouter
 
 extension Router: URLConvertible {
-    func asURL() throws -> URL {
+    public func asURL() throws -> URL {
         return url
     }
 }
