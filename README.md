@@ -10,7 +10,7 @@ Declarative URL routing in swift
 Here is an example of the Router for some back-end `API`:
 
 ```swift
-struct Api: RouterType {
+struct Api: EndpointType {
     enum Environment: EnvironmentType {
         case localhost
         case test
@@ -56,7 +56,7 @@ print(Router<Api>(.production, at: .posts(for: Date())).url) // https://myproduc
 It can often happen, that you will be using some third-party `API` and you will have only access to Production environment. So in this case your Router will look something like this:
 
 ```swift
-struct Auth: RouterType {
+struct Auth: EndpointType {
     enum Route: RouteType {
         case signIn, signOut
         
