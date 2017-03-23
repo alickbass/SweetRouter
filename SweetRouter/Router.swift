@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Router<T: RouterType>: URLRepresentable {
+public struct Router<T: EndpointType>: URLRepresentable {
     public let environment: T.Environment
     public let route: T.Route
     
@@ -40,7 +40,7 @@ public extension URLRepresentable {
     }
 }
 
-public protocol RouterType {
+public protocol EndpointType {
     associatedtype Environment: EnvironmentType
     associatedtype Route: RouteType
     

@@ -9,7 +9,7 @@
 import XCTest
 import SweetRouter
 
-struct Api: RouterType {
+struct Api: EndpointType {
     enum Environment: EnvironmentType {
         case localhost
         case test
@@ -41,7 +41,7 @@ struct Api: RouterType {
     static let `default`: Environment = .localhost
 }
 
-struct Auth: RouterType {
+struct Auth: EndpointType {
     enum Route: RouteType {
         case signIn, signOut
         
