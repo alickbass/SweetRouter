@@ -5,6 +5,70 @@ Declarative URL routing in swift
 [![Build Status](https://travis-ci.org/alickbass/SweetRouter.svg?branch=master)](https://travis-ci.org/alickbass/SweetRouter)
 [![codecov](https://codecov.io/gh/alickbass/SweetRouter/branch/master/graph/badge.svg)](https://codecov.io/gh/alickbass/SweetRouter)
 
+## Definitions
+
+Imagine that you use the following `URLs` within your App
+
+```
+https://myservercom.com:123/api/new/signIn
+https://myservercom.com:123/api/new/signOut
+https://myservercom.com:123/api/new/posts?date=today&userId=id
+```
+
+Every `URL` in the list is called an **`Endpoint`**
+
+### Endpoint
+
+Endpoint has the following structure:
+
+```
+                         Endpoint
+┌───────────────────────────┴────────────────────────────────┐
+https://myservercom.com:123/api/new/posts?date=today&userId=id
+└────────────┬────────────┘└───────────────┬─────────────────┘
+        Environment                      Route
+```
+
+Endpoint is represented with `EndpointType` `protocol`.
+
+### Environment
+
+Environment has the following structure:
+
+```
+        Environment
+┌────────────┴────────────┐
+https://myservercom.com:123/api/new/posts?date=today&userId=id
+└─┬─┘  └───────┬───────┘└┬┘
+scheme        host      port
+```
+
+**Examples of Environment**
+
+```swift
+URL.Environment(.https, "mytestserver.com") // https://mytestserver.com
+URL.Environment(IP(127, 0, 0, 1), 8080) // http://127.0.01:8080
+URL.Environment.localhost(4001) // http://localhost:4001
+```
+
+### Route
+Route has the following structure:
+
+```
+                                        Route
+                           ┌──────────────┴──────────────────┐
+https://myservercom.com:123/api/new/posts?date=today&userId=id
+                           └─────┬──────┘└─────────┬─────────┘
+                               path              query
+```
+
+**Example of Route**
+
+```swift
+// /api/new/posts?date=today&userId=id
+URL.Route(path: ["api", "new", "posts"], query: ("date", "today"), ("userId", "id"))
+```
+
 ## Example of usage
 
 Here is an example of the Router for some back-end `API`:
