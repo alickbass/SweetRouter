@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode8.2
+osx_image: xcode8.3
 
 script:
   - open -a "simulator" --args -CurrentDeviceUDID AD8E8C76-910E-437D-88C2-4D6F6EBE3355
