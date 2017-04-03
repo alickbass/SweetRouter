@@ -95,10 +95,10 @@ struct Api: EndpointType {
         
         var route: URL.Route {
             switch self {
-            case .me: return .init(path: ["me"])
-            case .auth: return .init(path: ["auth"])
+            case .me: return .init(at: "me")
+            case .auth: return .init(at: "auth")
             case let .posts(for: date):
-                return URL.Route(path: ["posts"], query: ("date", date), ("userId", "someId"))
+                return URL.Route(at: "posts").query(("date", date), ("userId", "someId"))
             }
         }
     }
