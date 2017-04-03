@@ -14,20 +14,14 @@ public extension URL {
         public let query: Query?
         public let fragment: String?
         
-        public init(path: Path, query: (name: String, value: QueryItemValue?)...) {
-            self.path = path
-            self.query = Query(query)
-            fragment = nil
-        }
-        
         init(path: Path, query: Query?, fragment: String?) {
             self.path = path
             self.query = query
             self.fragment = fragment
         }
         
-        public init(path: Path) {
-            self.init(path: path, query: nil, fragment: nil)
+        public init(at path: RoutePathComponent...) {
+            self.init(path: Path(path), query: nil, fragment: nil)
         }
         
         public func query(_ query: (name: String, value: QueryItemValue?)...) -> Route {
