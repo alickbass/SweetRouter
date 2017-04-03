@@ -23,6 +23,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
         
         components.path = self.route.defaultPath.with(route.path).pathValue
         components.queryItems = route.query?.queryItems
+        components.fragment = route.fragment
         
         return components
     }
