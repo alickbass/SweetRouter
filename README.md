@@ -55,7 +55,7 @@ URL.Environment.localhost(4001) // http://localhost:4001
 Route has the following structure:
 
 ```
-                                        Route
+                                                Route
                            ┌──────────────────────┴────────────────────┐
 https://myservercom.com:123/api/new/posts?date=today&userId=id#paragraph
                            └─────┬──────┘└─────────┬─────────┘└───┬────┘
