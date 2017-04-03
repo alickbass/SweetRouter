@@ -22,11 +22,11 @@ Every `URL` in the list is called an **`Endpoint`**
 Endpoint has the following structure:
 
 ```
-                         Endpoint
-┌───────────────────────────┴────────────────────────────────┐
-https://myservercom.com:123/api/new/posts?date=today&userId=id
-└────────────┬────────────┘└───────────────┬─────────────────┘
-        Environment                      Route
+                               Endpoint
+┌─────────────────────────────────┴────────────────────────────────────┐
+https://myservercom.com:123/api/new/posts?date=today&userId=id#paragraph
+└────────────┬────────────┘└────────────────────┬──────────────────────┘
+        Environment                           Route
 ```
 
 Endpoint is represented with `EndpointType` `protocol`.
@@ -38,7 +38,7 @@ Environment has the following structure:
 ```
         Environment
 ┌────────────┴────────────┐
-https://myservercom.com:123/api/new/posts?date=today&userId=id
+https://myservercom.com:123/api/new/posts?date=today&userId=id#paragraph
 └─┬─┘  └───────┬───────┘└┬┘
 scheme        host      port
 ```
@@ -56,17 +56,17 @@ Route has the following structure:
 
 ```
                                         Route
-                           ┌──────────────┴──────────────────┐
-https://myservercom.com:123/api/new/posts?date=today&userId=id
-                           └─────┬──────┘└─────────┬─────────┘
-                               path              query
+                           ┌──────────────────────┴────────────────────┐
+https://myservercom.com:123/api/new/posts?date=today&userId=id#paragraph
+                           └─────┬──────┘└─────────┬─────────┘└───┬────┘
+                               path              query         fragment
 ```
 
 **Example of Route**
 
 ```swift
-// /api/new/posts?date=today&userId=id
-URL.Route(at: "api", "new", "posts").query(("date", "today"), ("userId", "id"))
+// /api/new/posts?date=today&userId=id#paragraph
+URL.Route(at: "api", "new", "posts").query(("date", "today"), ("userId", "id")).fragment("paragraph")
 ```
 
 ## Example of usage
