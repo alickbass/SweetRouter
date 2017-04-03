@@ -66,7 +66,7 @@ https://myservercom.com:123/api/new/posts?date=today&userId=id
 
 ```swift
 // /api/new/posts?date=today&userId=id
-URL.Route(path: ["api", "new", "posts"], query: ("date", "today"), ("userId", "id"))
+URL.Route(at: "api", "new", "posts").query(("date", "today"), ("userId", "id"))
 ```
 
 ## Example of usage
