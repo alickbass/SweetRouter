@@ -14,7 +14,7 @@ public extension URL {
         public let query: Query?
         public let fragment: String?
         
-        init(path: Path, query: Query?, fragment: String?) {
+        public init(path: Path, query: Query? = nil, fragment: String? = nil) {
             self.path = path
             self.query = query
             self.fragment = fragment
