@@ -103,7 +103,7 @@ struct Api: EndpointType {
         }
     }
     
-    static let `default`: Environment = .localhost
+    static let current: Environment = .localhost
 }
 ```
 
@@ -136,7 +136,7 @@ struct Auth: EndpointType {
         }
     }
     
-    static let `default` = URL.Environment(.https, "auth.server.com", 8080)
+    static let current = URL.Environment(.https, "auth.server.com", 8080)
 }
 ```
 
