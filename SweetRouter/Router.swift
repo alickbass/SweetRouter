@@ -12,7 +12,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
     public let environment: T.Environment
     public let route: T.Route
     
-    public init(_ environment: T.Environment = T.default, at route: T.Route) {
+    public init(_ environment: T.Environment = T.current, at route: T.Route) {
         self.environment = environment
         self.route = route
     }
@@ -45,7 +45,7 @@ public protocol EndpointType {
     associatedtype Environment: EnvironmentType
     associatedtype Route: RouteType
     
-    static var `default`: Environment { get }
+    static var current: Environment { get }
 }
 
 public protocol RouteType {
