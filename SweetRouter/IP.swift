@@ -21,6 +21,12 @@ public struct IP {
         fourthOctet = fourth
     }
     
+    public init?(_ string: String) {
+        let octets = string.components(separatedBy: ".").flatMap({ UInt8($0) })
+        guard octets.count == 4 else { return nil }
+        self.init(octets[0], octets[1], octets[2], octets[3])
+    }
+    
     public var stringValue: String {
         return "\(firstOctet).\(secondOctet).\(thirdOctet).\(fourthOctet)"
     }
