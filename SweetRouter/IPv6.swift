@@ -76,6 +76,12 @@ extension IP {
     }
 }
 
+extension IP.V6: HostType {
+    public var hostString: String {
+        return "[\(stringValue)]"
+    }
+}
+
 extension IP.V6: Hashable {
     public static func == (lhs: IP.V6, rhs: IP.V6) -> Bool {
         return lhs.quartets.0 == rhs.quartets.0
