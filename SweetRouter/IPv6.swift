@@ -15,6 +15,32 @@ extension IP {
         public init(_ one: UInt16, _ two: UInt16, _ three: UInt16, _ four: UInt16, _ five: UInt16, _ six: UInt16, _ seven: UInt16, _ eight: UInt16) {
             quartets = (one, two, three, four, five, six, seven, eight)
         }
+        
+        public init?(_ string: String) {
+            let numberOfQuarters = 8
+            var components = string.components(separatedBy: "::")
+            guard components.count <= 2 else { return nil }
+            
+            if components.count == 2 {
+                for item in components.enumerated() where item.element.isEmpty {
+                    components[item.offset] = "0"
+                }
+            }
+            let intComponents = components.map({ $0.components(separatedBy: ":").map({ UInt16($0, radix: 16) }) })
+            let intComponentsCount = intComponents.reduce(0, { $0 + $1.count })
+            guard intComponentsCount <= numberOfQuarters else { return nil }
+            let flattenedComponents = intComponents.map({ $0.flatMap({ $0 }) })
+            guard flattenedComponents.reduce(0, { $0 + $1.count }) == intComponentsCount else { return nil }
+            var result: [UInt16] = Array(repeating: 0, count: numberOfQuarters)
+            func updateValues(from array: [UInt16], start: Int) {
+                array.enumerated().forEach({ result[start + $0.offset] = $0.element })
+            }
+            updateValues(from: flattenedComponents[0], start: 0)
+            if let last = flattenedComponents.last {
+                updateValues(from: last, start: numberOfQuarters - last.count)
+            }
+            self.init(result[0], result[1], result[2], result[3], result[4], result[5], result[6], result[7])
+        }
     }
 }
 

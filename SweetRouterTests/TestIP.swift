@@ -33,4 +33,16 @@ class TestIP: XCTestCase {
         XCTAssertNotEqual(IP.V6(0x2001,0xcdba,0,0,0,0,0x3257,0x9652).hashValue, IP.V6(0x2001,0xcdba,0x0,0x3257,0x0,0x3257,0x3257,0x9652).hashValue)
     }
     
+    func testIPv6StringInit() {
+        XCTAssertEqual(IP.V6("2001:db8:85a3:0:0:8a2e:370:7334"), IP.V6(0x2001,0xdb8,0x85a3,0x0,0x0,0x8a2e,0x370,0x7334))
+        XCTAssertEqual(IP.V6("2001:db8:85a3:0:0:8a2e:370::"), IP.V6(0x2001,0xdb8,0x85a3,0,0,0x8a2e,0x370,0))
+        XCTAssertEqual(IP.V6("2001:db8:85a3::8a2e:370:7334"), IP.V6(0x2001,0xdb8,0x85a3,0x0,0x0,0x8a2e,0x370,0x7334))
+        XCTAssertEqual(IP.V6("::"), IP.V6(0,0,0,0,0,0,0,0))
+        XCTAssertEqual(IP.V6("::1"), IP.V6(0,0,0,0,0,0,0,1))
+        XCTAssertEqual(IP.V6("1::"), IP.V6(1,0,0,0,0,0,0,0))
+        XCTAssertNil(IP.V6(":::"))
+        XCTAssertNil(IP.V6("2001:db8:85a3:0:0:0:8a2e:370:7334"))
+        XCTAssertNil(IP.V6("zeee::85a3::8a2e:370:7334"))
+    }
+    
 }
