@@ -45,4 +45,14 @@ class TestIP: XCTestCase {
         XCTAssertNil(IP.V6("zeee::85a3::8a2e:370:7334"))
     }
     
+    func testIPv6StringValue() {
+        XCTAssertEqual(IP.V6(0x2001,0xdb8,0x85a3,0x0,0x0,0x8a2e,0x370,0x7334).stringValue, "2001:db8:85a3::8a2e:370:7334")
+        XCTAssertEqual(IP.V6(0,0,0,0,0,0,0,0).stringValue, "::")
+        XCTAssertEqual(IP.V6(0,0,0,0,0,0,0,1).stringValue, "::1")
+        XCTAssertEqual(IP.V6(0x2001,0xdb8,0x0,0x0,0x1,0x0,0x0,0x1).stringValue, "2001:db8::1:0:0:1")
+        XCTAssertEqual(IP.V6(0x2001,0xdb8,0,0,0x1,0,0,0).stringValue, "2001:db8::1:0:0:0")
+        XCTAssertEqual(IP.V6(0x2001,0xdb8,0,0,0,0,0x2,0x1).stringValue, "2001:db8::2:1")
+        XCTAssertEqual(IP.V6(0x2001,0xdb8,0,0x1,0x1,0x1,0x1,0x1).stringValue, "2001:db8:0:1:1:1:1:1")
+    }
+    
 }

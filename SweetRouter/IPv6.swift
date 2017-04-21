@@ -41,6 +41,38 @@ extension IP {
             }
             self.init(result[0], result[1], result[2], result[3], result[4], result[5], result[6], result[7])
         }
+        
+        public var stringValue: String {
+            let array = [quartets.0, quartets.1, quartets.2, quartets.3, quartets.4, quartets.5, quartets.6, quartets.7]
+            var results = [String]()
+            var shortCutRange: (start: Int?, end: Int?) = (nil, nil)
+            
+            for (i, item) in array.enumerated() {
+                let previous = i == array.startIndex ? nil : array[i-1]
+                let next = i == array.endIndex - 1 ? nil : array[i+1]
+                
+                switch (shortCutRange, item, previous, next) {
+                case let ((start, nil), 0, .some(0), .some(0)) where start != nil:
+                    continue
+                case let ((nil, nil), 0, previous, .some(0)) where previous != 0:
+                    shortCutRange = (i, nil)
+                case let ((start, nil), 0, .some(0), next) where start != nil && next != 0:
+                    shortCutRange = (shortCutRange.start, i)
+                    results.append("")
+                default:
+                    results.append(String(item, radix: 16, uppercase: false))
+                }
+            }
+            
+            var separator = ":"
+            
+            if results.count < 3, let index = results.index(of: "") {
+                results[index] = "::"
+                separator = ""
+            }
+            
+            return results.joined(separator: separator)
+        }
     }
 }
 
