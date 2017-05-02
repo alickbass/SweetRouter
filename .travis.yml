@@ -2,8 +2,8 @@ language: objective-c
 osx_image: xcode8.3
 
 script:
-  - open -a "simulator" --args -CurrentDeviceUDID 2437D975-7A64-4F01-B8C9-2510D4DAF5AD
-  - xcodebuild clean build test -project SweetRouter.xcodeproj -scheme SweetRouter -destination 'platform=iOS Simulator,OS=10.3,id=2437D975-7A64-4F01-B8C9-2510D4DAF5AD'
+  - open -a "simulator" --args -CurrentDeviceUDID 99F4F45C-3B72-4473-A6C5-3FD81EF3C25D
+  - xcodebuild clean build test -project SweetRouter.xcodeproj -scheme SweetRouter -destination 'platform=iOS Simulator,OS=10.3,id=99F4F45C-3B72-4473-A6C5-3FD81EF3C25D'
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
