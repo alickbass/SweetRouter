@@ -10,6 +10,12 @@ matrix:
     - script:
         - xcodebuild clean build test -project SweetRouter.xcodeproj -scheme SweetRouter-tvOS -destination 'platform=tvOS Simulator,OS=10.2,name=Apple TV 1080p'
 
+    - script:
+        - xcodebuild clean build test -project SweetRouter.xcodeproj -scheme SweetRouter-Mac
+
+    - script:
+        - xcodebuild clean build -project SweetRouter.xcodeproj -scheme SweetRouter-watchOS
+
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 
