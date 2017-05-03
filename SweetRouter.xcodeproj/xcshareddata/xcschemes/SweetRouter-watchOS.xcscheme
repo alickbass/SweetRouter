@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE0CE9311E7AC651000647EF"
-               BuildableName = "SweetRouter.framework"
-               BlueprintName = "SweetRouter"
+               BlueprintIdentifier = "CE3715291EB9CC8600590480"
+               BuildableName = "SweetRouter-watchOS.framework"
+               BlueprintName = "SweetRouter-watchOS"
                ReferencedContainer = "container:SweetRouter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,29 +26,9 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE0CE93A1E7AC651000647EF"
-               BuildableName = "SweetRouterTests.xctest"
-               BlueprintName = "SweetRouterTests"
-               ReferencedContainer = "container:SweetRouter.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE0CE9311E7AC651000647EF"
-            BuildableName = "SweetRouter.framework"
-            BlueprintName = "SweetRouter"
-            ReferencedContainer = "container:SweetRouter.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -65,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE0CE9311E7AC651000647EF"
-            BuildableName = "SweetRouter.framework"
-            BlueprintName = "SweetRouter"
+            BlueprintIdentifier = "CE3715291EB9CC8600590480"
+            BuildableName = "SweetRouter-watchOS.framework"
+            BlueprintName = "SweetRouter-watchOS"
             ReferencedContainer = "container:SweetRouter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE0CE9311E7AC651000647EF"
-            BuildableName = "SweetRouter.framework"
-            BlueprintName = "SweetRouter"
+            BlueprintIdentifier = "CE3715291EB9CC8600590480"
+            BuildableName = "SweetRouter-watchOS.framework"
+            BlueprintName = "SweetRouter-watchOS"
             ReferencedContainer = "container:SweetRouter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

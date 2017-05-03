@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE0CE9311E7AC651000647EF"
+               BlueprintIdentifier = "CE3714FD1EB9CB0200590480"
                BuildableName = "SweetRouter.framework"
-               BlueprintName = "SweetRouter"
+               BlueprintName = "SweetRouter-tvOS"
                ReferencedContainer = "container:SweetRouter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE0CE93A1E7AC651000647EF"
-               BuildableName = "SweetRouterTests.xctest"
-               BlueprintName = "SweetRouterTests"
+               BlueprintIdentifier = "CE3715051EB9CB0200590480"
+               BuildableName = "SweetRouter-tvOSTests.xctest"
+               BlueprintName = "SweetRouter-tvOSTests"
                ReferencedContainer = "container:SweetRouter.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,9 +43,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE0CE9311E7AC651000647EF"
+            BlueprintIdentifier = "CE3714FD1EB9CB0200590480"
             BuildableName = "SweetRouter.framework"
-            BlueprintName = "SweetRouter"
+            BlueprintName = "SweetRouter-tvOS"
             ReferencedContainer = "container:SweetRouter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE0CE9311E7AC651000647EF"
+            BlueprintIdentifier = "CE3714FD1EB9CB0200590480"
             BuildableName = "SweetRouter.framework"
-            BlueprintName = "SweetRouter"
+            BlueprintName = "SweetRouter-tvOS"
             ReferencedContainer = "container:SweetRouter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,9 +83,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE0CE9311E7AC651000647EF"
+            BlueprintIdentifier = "CE3714FD1EB9CB0200590480"
             BuildableName = "SweetRouter.framework"
-            BlueprintName = "SweetRouter"
+            BlueprintName = "SweetRouter-tvOS"
             ReferencedContainer = "container:SweetRouter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
