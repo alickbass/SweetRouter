@@ -18,6 +18,23 @@
 		CE756FDD1E7C39A500D55DBA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE756FDC1E7C39A500D55DBA /* Router.swift */; };
 		CE756FE11E7C411D00D55DBA /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE756FE01E7C411D00D55DBA /* TestRouter.swift */; };
 		CE8F7F391EAA007600336390 /* IPv6.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F7F381EAA007600336390 /* IPv6.swift */; };
+		CEA374FE1EB9C86700DA55C5 /* SweetRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA374F51EB9C86700DA55C5 /* SweetRouter.framework */; };
+		CEA3750C1EB9C89000DA55C5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE756FDC1E7C39A500D55DBA /* Router.swift */; };
+		CEA3750D1EB9C89C00DA55C5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEECFA21E7C3218000D625A /* Environment.swift */; };
+		CEA3750E1EB9C89C00DA55C5 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE94C1E7AD157000647EF /* Scheme.swift */; };
+		CEA3750F1EB9C89C00DA55C5 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEECFA01E7C30BC000D625A /* Host.swift */; };
+		CEA375101EB9C89C00DA55C5 /* IP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE9501E7ADE6B000647EF /* IP.swift */; };
+		CEA375111EB9C89C00DA55C5 /* IPv6.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F7F381EAA007600336390 /* IPv6.swift */; };
+		CEA375121EB9C8A000DA55C5 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949F01E7C293C00D3C856 /* Route.swift */; };
+		CEA375131EB9C8A000DA55C5 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3507411E7AF0BE007BCD37 /* Path.swift */; };
+		CEA375141EB9C8A000DA55C5 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949EC1E7C200000D3C856 /* Query.swift */; };
+		CEA375151EB9C95700DA55C5 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE756FE01E7C411D00D55DBA /* TestRouter.swift */; };
+		CEA375161EB9C95700DA55C5 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEECFA41E7C3570000D625A /* TestEnvironment.swift */; };
+		CEA375171EB9C95700DA55C5 /* TestScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE94E1E7AD223000647EF /* TestScheme.swift */; };
+		CEA375181EB9C95700DA55C5 /* TestIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CE9521E7AE0CF000647EF /* TestIP.swift */; };
+		CEA375191EB9C95700DA55C5 /* TestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEECF9C1E7C2B82000D625A /* TestRoute.swift */; };
+		CEA3751A1EB9C95700DA55C5 /* TestRoutePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3507431E7AF0F5007BCD37 /* TestRoutePath.swift */; };
+		CEA3751B1EB9C95700DA55C5 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949EE1E7C23E400D3C856 /* TestQuery.swift */; };
 		CEE949ED1E7C200000D3C856 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949EC1E7C200000D3C856 /* Query.swift */; };
 		CEE949EF1E7C23E400D3C856 /* TestQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949EE1E7C23E400D3C856 /* TestQuery.swift */; };
 		CEE949F11E7C293C00D3C856 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949F01E7C293C00D3C856 /* Route.swift */; };
@@ -34,6 +51,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = CE0CE9311E7AC651000647EF;
 			remoteInfo = SweetRouter;
+		};
+		CEA374FF1EB9C86700DA55C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE0CE9291E7AC651000647EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA374F41EB9C86700DA55C5;
+			remoteInfo = "SweetRouter-Mac";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,6 +76,8 @@
 		CE756FDC1E7C39A500D55DBA /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		CE756FE01E7C411D00D55DBA /* TestRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
 		CE8F7F381EAA007600336390 /* IPv6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPv6.swift; sourceTree = "<group>"; };
+		CEA374F51EB9C86700DA55C5 /* SweetRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweetRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA374FD1EB9C86700DA55C5 /* SweetRouter-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SweetRouter-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE949EC1E7C200000D3C856 /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
 		CEE949EE1E7C23E400D3C856 /* TestQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestQuery.swift; sourceTree = "<group>"; };
 		CEE949F01E7C293C00D3C856 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
@@ -77,6 +103,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEA374F11EB9C86700DA55C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA374FA1EB9C86700DA55C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA374FE1EB9C86700DA55C5 /* SweetRouter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,6 +135,8 @@
 			children = (
 				CE0CE9321E7AC651000647EF /* SweetRouter.framework */,
 				CE0CE93B1E7AC651000647EF /* SweetRouterTests.xctest */,
+				CEA374F51EB9C86700DA55C5 /* SweetRouter.framework */,
+				CEA374FD1EB9C86700DA55C5 /* SweetRouter-MacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +201,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEA374F21EB9C86700DA55C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -197,13 +247,49 @@
 			productReference = CE0CE93B1E7AC651000647EF /* SweetRouterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CEA374F41EB9C86700DA55C5 /* SweetRouter-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA3750A1EB9C86700DA55C5 /* Build configuration list for PBXNativeTarget "SweetRouter-Mac" */;
+			buildPhases = (
+				CEA374F01EB9C86700DA55C5 /* Sources */,
+				CEA374F11EB9C86700DA55C5 /* Frameworks */,
+				CEA374F21EB9C86700DA55C5 /* Headers */,
+				CEA374F31EB9C86700DA55C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SweetRouter-Mac";
+			productName = "SweetRouter-Mac";
+			productReference = CEA374F51EB9C86700DA55C5 /* SweetRouter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CEA374FC1EB9C86700DA55C5 /* SweetRouter-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA3750B1EB9C86700DA55C5 /* Build configuration list for PBXNativeTarget "SweetRouter-MacTests" */;
+			buildPhases = (
+				CEA374F91EB9C86700DA55C5 /* Sources */,
+				CEA374FA1EB9C86700DA55C5 /* Frameworks */,
+				CEA374FB1EB9C86700DA55C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA375001EB9C86700DA55C5 /* PBXTargetDependency */,
+			);
+			name = "SweetRouter-MacTests";
+			productName = "SweetRouter-MacTests";
+			productReference = CEA374FD1EB9C86700DA55C5 /* SweetRouter-MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CE0CE9291E7AC651000647EF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = ViolentOctopus;
 				TargetAttributes = {
@@ -215,6 +301,16 @@
 					};
 					CE0CE93A1E7AC651000647EF = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7H6SM4X3H7;
+						ProvisioningStyle = Automatic;
+					};
+					CEA374F41EB9C86700DA55C5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5MH662633R;
+						ProvisioningStyle = Automatic;
+					};
+					CEA374FC1EB9C86700DA55C5 = {
+						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 7H6SM4X3H7;
 						ProvisioningStyle = Automatic;
 					};
@@ -234,6 +330,8 @@
 			targets = (
 				CE0CE9311E7AC651000647EF /* SweetRouter */,
 				CE0CE93A1E7AC651000647EF /* SweetRouterTests */,
+				CEA374F41EB9C86700DA55C5 /* SweetRouter-Mac */,
+				CEA374FC1EB9C86700DA55C5 /* SweetRouter-MacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +345,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CE0CE9391E7AC651000647EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA374F31EB9C86700DA55C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA374FB1EB9C86700DA55C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,6 +398,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEA374F01EB9C86700DA55C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA3750E1EB9C89C00DA55C5 /* Scheme.swift in Sources */,
+				CEA375141EB9C8A000DA55C5 /* Query.swift in Sources */,
+				CEA3750C1EB9C89000DA55C5 /* Router.swift in Sources */,
+				CEA375131EB9C8A000DA55C5 /* Path.swift in Sources */,
+				CEA3750D1EB9C89C00DA55C5 /* Environment.swift in Sources */,
+				CEA375101EB9C89C00DA55C5 /* IP.swift in Sources */,
+				CEA375111EB9C89C00DA55C5 /* IPv6.swift in Sources */,
+				CEA375121EB9C8A000DA55C5 /* Route.swift in Sources */,
+				CEA3750F1EB9C89C00DA55C5 /* Host.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA374F91EB9C86700DA55C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA375181EB9C95700DA55C5 /* TestIP.swift in Sources */,
+				CEA375151EB9C95700DA55C5 /* TestRouter.swift in Sources */,
+				CEA3751A1EB9C95700DA55C5 /* TestRoutePath.swift in Sources */,
+				CEA375161EB9C95700DA55C5 /* TestEnvironment.swift in Sources */,
+				CEA375191EB9C95700DA55C5 /* TestRoute.swift in Sources */,
+				CEA375171EB9C95700DA55C5 /* TestScheme.swift in Sources */,
+				CEA3751B1EB9C95700DA55C5 /* TestQuery.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +435,11 @@
 			isa = PBXTargetDependency;
 			target = CE0CE9311E7AC651000647EF /* SweetRouter */;
 			targetProxy = CE0CE93D1E7AC651000647EF /* PBXContainerItemProxy */;
+		};
+		CEA375001EB9C86700DA55C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA374F41EB9C86700DA55C5 /* SweetRouter-Mac */;
+			targetProxy = CEA374FF1EB9C86700DA55C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -467,6 +614,94 @@
 			};
 			name = Release;
 		};
+		CEA375061EB9C86700DA55C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5MH662633R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SweetRouter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.violentoctopus.SweetRouter;
+				PRODUCT_NAME = SweetRouter;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CEA375071EB9C86700DA55C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5MH662633R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SweetRouter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.violentoctopus.SweetRouter;
+				PRODUCT_NAME = SweetRouter;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CEA375081EB9C86700DA55C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7H6SM4X3H7;
+				INFOPLIST_FILE = SweetRouterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.violentoctopus.SweetRouter-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CEA375091EB9C86700DA55C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7H6SM4X3H7;
+				INFOPLIST_FILE = SweetRouterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.violentoctopus.SweetRouter-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -496,6 +731,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CEA3750A1EB9C86700DA55C5 /* Build configuration list for PBXNativeTarget "SweetRouter-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA375061EB9C86700DA55C5 /* Debug */,
+				CEA375071EB9C86700DA55C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEA3750B1EB9C86700DA55C5 /* Build configuration list for PBXNativeTarget "SweetRouter-MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA375081EB9C86700DA55C5 /* Debug */,
+				CEA375091EB9C86700DA55C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
