@@ -1,9 +1,14 @@
 language: objective-c
 osx_image: xcode8.3
 
-script:
-  - open -a "simulator" --args -CurrentDeviceUDID 99F4F45C-3B72-4473-A6C5-3FD81EF3C25D
-  - xcodebuild clean build test -project SweetRouter.xcodeproj -scheme SweetRouter -destination 'platform=iOS Simulator,OS=10.3,id=99F4F45C-3B72-4473-A6C5-3FD81EF3C25D'
+matrix:
+  include:
+    - script:
+        - open -a "simulator" --args -CurrentDeviceUDID 99F4F45C-3B72-4473-A6C5-3FD81EF3C25D
+        - xcodebuild clean build test -project SweetRouter.xcodeproj -scheme SweetRouter -destination 'platform=iOS Simulator,OS=10.3,id=99F4F45C-3B72-4473-A6C5-3FD81EF3C25D'
+
+    - script:
+        - xcodebuild clean build test -project SweetRouter.xcodeproj -scheme SweetRouter -destination 'platform=tvOS Simulator,OS=10.2'
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
