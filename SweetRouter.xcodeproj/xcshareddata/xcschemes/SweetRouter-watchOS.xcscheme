@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CE3715291EB9CC8600590480"
-               BuildableName = "SweetRouter-watchOS.framework"
+               BuildableName = "SweetRouter.framework"
                BlueprintName = "SweetRouter-watchOS"
                ReferencedContainer = "container:SweetRouter.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE3715291EB9CC8600590480"
-            BuildableName = "SweetRouter-watchOS.framework"
+            BuildableName = "SweetRouter.framework"
             BlueprintName = "SweetRouter-watchOS"
             ReferencedContainer = "container:SweetRouter.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE3715291EB9CC8600590480"
-            BuildableName = "SweetRouter-watchOS.framework"
+            BuildableName = "SweetRouter.framework"
             BlueprintName = "SweetRouter-watchOS"
             ReferencedContainer = "container:SweetRouter.xcodeproj">
          </BuildableReference>
