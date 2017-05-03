@@ -41,6 +41,9 @@
 		CE3715381EB9CCCC00590480 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949F01E7C293C00D3C856 /* Route.swift */; };
 		CE3715391EB9CCCC00590480 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3507411E7AF0BE007BCD37 /* Path.swift */; };
 		CE37153A1EB9CCCC00590480 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE949EC1E7C200000D3C856 /* Query.swift */; };
+		CE3715581EB9DEA200590480 /* SweetRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE0CE9351E7AC651000647EF /* SweetRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE3715591EB9DEA400590480 /* SweetRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE0CE9351E7AC651000647EF /* SweetRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE37155A1EB9DEA500590480 /* SweetRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE0CE9351E7AC651000647EF /* SweetRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE756FDD1E7C39A500D55DBA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE756FDC1E7C39A500D55DBA /* Router.swift */; };
 		CE756FE11E7C411D00D55DBA /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE756FE01E7C411D00D55DBA /* TestRouter.swift */; };
 		CE8F7F391EAA007600336390 /* IPv6.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F7F381EAA007600336390 /* IPv6.swift */; };
@@ -266,6 +269,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3715591EB9DEA400590480 /* SweetRouter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +277,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE37155A1EB9DEA500590480 /* SweetRouter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +285,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3715581EB9DEA200590480 /* SweetRouter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1086,6 +1092,7 @@
 				CE3715101EB9CB0200590480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE3715141EB9CB0200590480 /* Build configuration list for PBXNativeTarget "SweetRouter-tvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1094,6 +1101,7 @@
 				CE3715121EB9CB0200590480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE37152F1EB9CC8600590480 /* Build configuration list for PBXNativeTarget "SweetRouter-watchOS" */ = {
 			isa = XCConfigurationList;
@@ -1102,6 +1110,7 @@
 				CE3715311EB9CC8600590480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEA3750A1EB9C86700DA55C5 /* Build configuration list for PBXNativeTarget "SweetRouter-Mac" */ = {
 			isa = XCConfigurationList;
