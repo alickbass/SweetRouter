@@ -9,7 +9,7 @@
 import Foundation
 
 extension IP {
-    public struct V6 {
+    public struct V6: IPType {
         public let quartets: (UInt16, UInt16, UInt16, UInt16, UInt16, UInt16, UInt16, UInt16)
         
         public init(_ one: UInt16, _ two: UInt16, _ three: UInt16, _ four: UInt16, _ five: UInt16, _ six: UInt16, _ seven: UInt16, _ eight: UInt16) {
