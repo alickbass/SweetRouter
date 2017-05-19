@@ -8,7 +8,12 @@
 
 import Foundation
 
-public struct IP {
+public protocol IPType: HostType, Hashable {
+    init?(_ string: String)
+    var stringValue: String { get }
+}
+
+public struct IP: IPType {
     public let firstOctet: UInt8
     public let secondOctet: UInt8
     public let thirdOctet: UInt8
@@ -29,6 +34,12 @@ public struct IP {
     
     public var stringValue: String {
         return "\(firstOctet).\(secondOctet).\(thirdOctet).\(fourthOctet)"
+    }
+}
+
+extension IP: HostType {
+    public var hostString: String {
+        return stringValue
     }
 }
 

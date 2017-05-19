@@ -17,9 +17,3 @@ extension String: HostType {
         return self
     }
 }
-
-extension IP: HostType {
-    public var hostString: String {
-        return stringValue
-    }
-}
