@@ -1,5 +1,5 @@
 # SweetRouter
-Declarative URL routing in swift
+Declarative URL routing in swift for Alamofire and not only :)
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) 
 [![Build Status](https://travis-ci.org/alickbass/SweetRouter.svg?branch=master)](https://travis-ci.org/alickbass/SweetRouter)
