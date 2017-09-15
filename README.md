@@ -74,7 +74,7 @@ URL.Route(at: "api", "new", "posts").query(("date", "today"), ("userId", "id")).
 Here is an example of the Router for some back-end `API`:
 
 ```swift
-struct Api: EndpointType {
+enum Api: EndpointType {
     enum Environment: EnvironmentType {
         case localhost
         case test
