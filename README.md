@@ -25,8 +25,8 @@ Endpoint has the following structure:
                                Endpoint
 ┌─────────────────────────────────┴────────────────────────────────────┐
 https://myservercom.com:123/api/new/posts?date=today&userId=id#paragraph
-└────────────┬────────────────────┘└────────────┬──────────────────────┘
-        Environment                           Route
+└────────────────┬────────────────┘└────────────────┬──────────────────┘
+            Environment                           Route
 ```
 
 Endpoint is represented with `EndpointType` `protocol`.
