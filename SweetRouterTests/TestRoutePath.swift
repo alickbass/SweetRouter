@@ -23,6 +23,7 @@ class TestRoutePath: XCTestCase {
         XCTAssertEqual(URL.Path(URL.Path("new", "api"), "cards").pathValue, path)
         XCTAssertEqual((URL.Path("new", "api") + ["cards"]).pathValue, path)
         XCTAssertEqual(URL.Path("new", "api").with("cards").pathValue, path)
+        XCTAssertEqual(URL.Path().pathValue, "")
     }
     
 }

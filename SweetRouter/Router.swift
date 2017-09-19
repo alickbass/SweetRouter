@@ -64,6 +64,7 @@ public extension EnvironmentType {
         components.scheme = environment.scheme.rawValue
         components.host = environment.host.hostString
         components.port = environment.port
+        components.path = environment.defaultPath.pathValue
         
         return components
     }

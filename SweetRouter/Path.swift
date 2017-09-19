@@ -15,7 +15,8 @@ public protocol RoutePathComponent {
 
 public extension RoutePathComponent {
     public var pathValue: String {
-        return URL.Path.separator + stringValue
+        let string = stringValue
+        return string.isEmpty ? "" : URL.Path.separator + stringValue
     }
 }
 
