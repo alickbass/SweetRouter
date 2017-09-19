@@ -51,13 +51,9 @@ struct Auth: EndpointType {
             case .signOut: return .init(at: "me", "signOut")
             }
         }
-            
-        var defaultPath: URL.Path {
-            return .init("api", "new")
-        }
     }
     
-    static let current = URL.Environment(.https, "auth.server.com", 8080)
+    static let current = URL.Environment(.https, "auth.server.com", 8080).at("api", "new")
 }
 
 class TestRouter: XCTestCase {
