@@ -15,7 +15,7 @@ struct Api: EndpointType {
         case test
         case production
         
-        var value: URL.Environment {
+        var value: URL.Env {
             switch self {
             case .localhost: return .localhost(8080)
             case .test: return .init(IP(126, 251, 20, 32))
@@ -53,7 +53,7 @@ struct Auth: EndpointType {
         }
     }
     
-    static let current = URL.Environment(.https, "auth.server.com", 8080).at("api", "new")
+    static let current = URL.Env(.https, "auth.server.com", 8080).at("api", "new")
 }
 
 class TestRouter: XCTestCase {
