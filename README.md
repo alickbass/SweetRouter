@@ -46,9 +46,9 @@ scheme        host     port default path
 **Examples of Environment**
 
 ```swift
-URL.Environment(.https, "mytestserver.com").at("api", "new") // https://mytestserver.com/api/new/
-URL.Environment(IP(127, 0, 0, 1), 8080) // http://127.0.01:8080
-URL.Environment.localhost(4001) // http://localhost:4001
+URL.Env(.https, "mytestserver.com").at("api", "new") // https://mytestserver.com/api/new/
+URL.Env(IP(127, 0, 0, 1), 8080) // http://127.0.01:8080
+URL.Env.localhost(4001) // http://localhost:4001
 ```
 
 ### Route
@@ -80,7 +80,7 @@ enum Api: EndpointType {
         case test
         case production
         
-        var value: URL.Environment {
+        var value: URL.Env {
             switch self {
             case .localhost: return .localhost(8080)
             case .test: return .init(IP(126, 251, 20, 32))
@@ -132,7 +132,7 @@ struct Auth: EndpointType {
         }
     }
     
-    static let current = URL.Environment(.https, "auth.server.com", 8080).at("api", "new")
+    static let current = URL.Env(.https, "auth.server.com", 8080).at("api", "new")
 }
 ```
 
