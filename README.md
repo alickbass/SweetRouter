@@ -25,8 +25,8 @@ Endpoint has the following structure:
                                Endpoint
 ┌─────────────────────────────────┴────────────────────────────────────┐
 https://myservercom.com:123/api/new/posts?date=today&userId=id#paragraph
-└────────────┬────────────┘└────────────────────┬──────────────────────┘
-        Environment                           Route
+└────────────────┬────────────────┘└────────────────┬──────────────────┘
+            Environment                           Route
 ```
 
 Endpoint is represented with `EndpointType` `protocol`.
@@ -36,17 +36,17 @@ Endpoint is represented with `EndpointType` `protocol`.
 Environment has the following structure:
 
 ```
-        Environment
-┌────────────┴────────────┐
+            Environment
+┌────────────────┴─────────────────┐
 https://myservercom.com:123/api/new/posts?date=today&userId=id#paragraph
-└─┬─┘  └───────┬───────┘└┬┘
-scheme        host      port
+└─┬─┘  └───────┬───────┘└┬┘└─────┬─┘
+scheme        host     port default path
 ```
 
 **Examples of Environment**
 
 ```swift
-URL.Environment(.https, "mytestserver.com") // https://mytestserver.com
+URL.Environment(.https, "mytestserver.com").at("api", "new") // https://mytestserver.com/api/new/
 URL.Environment(IP(127, 0, 0, 1), 8080) // http://127.0.01:8080
 URL.Environment.localhost(4001) // http://localhost:4001
 ```
@@ -55,11 +55,11 @@ URL.Environment.localhost(4001) // http://localhost:4001
 Route has the following structure:
 
 ```
-                                                Route
-                           ┌──────────────────────┴────────────────────┐
+                                                   Route
+                                   ┌─────────────────┴─────────────────┐
 https://myservercom.com:123/api/new/posts?date=today&userId=id#paragraph
-                           └─────┬──────┘└─────────┬─────────┘└───┬────┘
-                               path              query         fragment
+                                   └──┬──┘└────────┬─────────┘└───┬────┘
+                                     path        query         fragment
 ```
 
 **Example of Route**
@@ -130,13 +130,9 @@ struct Auth: EndpointType {
             case .signOut: return .init(path: ["signOut"])
             }
         }
-            
-        var defaultPath: URL.Path {
-            return .init("api", "new")
-        }
     }
     
-    static let current = URL.Environment(.https, "auth.server.com", 8080)
+    static let current = URL.Environment(.https, "auth.server.com", 8080).at("api", "new")
 }
 ```
 

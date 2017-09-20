@@ -21,7 +21,7 @@ public struct Router<T: EndpointType>: URLRepresentable {
         var components = environment.components
         let route = self.route.route
         
-        components.path = self.route.defaultPath.with(route.path).pathValue
+        components.path = environment.value.defaultPath.with(route.path).pathValue
         components.queryItems = route.query?.queryItems
         components.fragment = route.fragment
         
@@ -50,7 +50,6 @@ public protocol EndpointType {
 
 public protocol RouteType {
     var route: URL.Route { get }
-    var defaultPath: URL.Path { get }
 }
 
 public protocol EnvironmentType: URLRepresentable {
@@ -65,11 +64,8 @@ public extension EnvironmentType {
         components.scheme = environment.scheme.rawValue
         components.host = environment.host.hostString
         components.port = environment.port
+        components.path = environment.defaultPath.pathValue
         
         return components
     }
-}
-
-public extension RouteType {
-    public var defaultPath: URL.Path { return [] }
 }

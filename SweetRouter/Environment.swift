@@ -13,6 +13,7 @@ public extension URL {
         public let scheme: Scheme
         public let host: HostType
         public let port: Int?
+        public var defaultPath: Path = []
         
         public static func localhost(_ scheme: Scheme, _ port: Int? = nil) -> Environment {
             return Environment(scheme, "localhost", port)
@@ -30,6 +31,12 @@ public extension URL {
         
         public init(_ host: HostType, _ port: Int? = nil) {
             self.init(.http, host, port)
+        }
+        
+        public func at(_ defaultPath: RoutePathComponent...) -> Environment {
+            var env = self
+            env.defaultPath = Path(defaultPath)
+            return env
         }
     }
 }
