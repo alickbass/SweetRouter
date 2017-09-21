@@ -53,7 +53,7 @@ public protocol RouteType {
 }
 
 public protocol EnvironmentType: URLRepresentable {
-    var value: URL.Environment { get }
+    var value: URL.Env { get }
 }
 
 public extension EnvironmentType {
