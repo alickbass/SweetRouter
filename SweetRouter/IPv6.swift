@@ -26,7 +26,7 @@ extension IP {
                     components[item.offset] = "0"
                 }
             }
-            let intComponents = components.map({ $0.components(separatedBy: ":").map({ UInt16($0, radix: 16) }) })
+            let intComponents = components.lazy.map({ $0.components(separatedBy: ":").map({ UInt16($0, radix: 16) }) })
             let intComponentsCount = intComponents.reduce(0, { $0 + $1.count })
             guard intComponentsCount <= numberOfQuarters else { return nil }
             let flattenedComponents = intComponents.map({ $0.flatMap({ $0 }) })
