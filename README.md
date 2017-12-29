@@ -7,12 +7,12 @@ Declarative URL routing in swift for Alamofire and not only :)
 
 ## Integration
 
-### CocoaPods (iOS 9+)
+### CocoaPods
 
 You can use CocoaPods to install SweetRouter by adding it to your Podfile:
 
 ```swift
-platform :ios, '9.0'
+platform :ios, '8.0'
 use_frameworks!
 
 target 'MyApp' do
@@ -20,7 +20,7 @@ pod 'SweetRouter'
 end
 ```
 
-### Carthage (iOS 9+)
+### Carthage
 
 You can use Carthage to install SweetRouter by adding it to your Cartfile:
 
