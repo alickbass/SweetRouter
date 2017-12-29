@@ -5,6 +5,29 @@ Declarative URL routing in swift for Alamofire and not only :)
 [![Build Status](https://travis-ci.org/alickbass/SweetRouter.svg?branch=master)](https://travis-ci.org/alickbass/SweetRouter)
 [![codecov](https://codecov.io/gh/alickbass/SweetRouter/branch/master/graph/badge.svg)](https://codecov.io/gh/alickbass/SweetRouter)
 
+## Integration
+
+### CocoaPods (iOS 9+)
+
+You can use CocoaPods to install SweetRouter by adding it to your Podfile:
+
+```swift
+platform :ios, '9.0'
+use_frameworks!
+
+target 'MyApp' do
+pod 'SweetRouter'
+end
+```
+
+### Carthage (iOS 9+)
+
+You can use Carthage to install SweetRouter by adding it to your Cartfile:
+
+```swift
+github "alickbass/SweetRouter"
+```
+
 ## Definitions
 
 Imagine that you use the following `URLs` within your App
